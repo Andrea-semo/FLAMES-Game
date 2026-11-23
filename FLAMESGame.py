@@ -6,8 +6,8 @@ list1 = list(upper_prenom1)
 list2 = list(upper_prenom2)
 for letter in list1 [:] :
    if letter in list2 :
-     list1.remove (letter)
-     list2.remove (letter)
+     removed_letter = list1.remove (letter)
+     removed_letter = list2.remove (letter)
 compteur = len(list1) + len(list2)
 FLAMES = ["F","L","A","M","E","S"]
 while len(FLAMES) >1 :
