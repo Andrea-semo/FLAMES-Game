@@ -11,27 +11,26 @@ for letter in list1 [:] :
 compteur = len(list1) + len(list2)
 FLAMES = ["F","L","A","M","E","S"]
 while len(FLAMES) >1 :
-    tour = 1
+    tour = 0
     position = 0
     while tour < compteur :
        position : int= position + 1
        if position >= len(FLAMES) :
             position= 0
-       compteur: int = compteur + 1
+       tour = tour + 1
     FLAMES.remove(FLAMES[position])
     if position >= len(FLAMES):
        position = 0  
-print(FLAMES [0])
 if FLAMES [0] == "F" :
-   print ("friends")
+   print ("you are friends")
 elif FLAMES [0] == "L" :
-  print ("lovers")
+  print ("you are in love")
 elif FLAMES [0] == "A" :
-   print("Affection")
+   print("you have affection for each other")
 elif FLAMES [0] == "M" : 
-  print ("Marriage")
+  print ("you are married")
 elif FLAMES [0] == "E" :
-   print ("Enemies")
+   print ("you are enemies")
 else :
-   print ("Siblings")
+   print ("you are siblings")
 
